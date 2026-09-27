@@ -1,0 +1,43 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Large datasets
+data/sen2naipv2-crosssensor.taco
+data/sen2naipv2_extracted/
+data/sample_subset/
+
+# GeoTIFF / image data
+*.tif
+*.tiff
+
+# Model checkpoints
+outputs/checkpoints/generator_epoch_*.pth
+outputs/checkpoints/*.pt
+
+# Keep the best trained model for deployment
+!outputs/checkpoints/best_generator.pth
+
+# Generated outputs
+outputs/samples/
+outputs/inference/
+outputs/app_SR.tif
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Windows
+Thumbs.db
+.DS_Store
+
+# Temporary / generated analysis files
+data/sample_block.bin
+outputs/metrics/
+outputs/baselines/
+outputs/visual_comparisons/
+outputs/LR_SR_HR_comparison.png
+outputs/checkpoint_comparison.png
+outputs/visual_comparisons.lnk
